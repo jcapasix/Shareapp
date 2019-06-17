@@ -33,6 +33,7 @@ class RegisterConfigurator{
         controller.presenter = presenter
         controller.router = router
         
+        dataManager.interactor = interactor
         wireFrame.controller = controller
         
     }

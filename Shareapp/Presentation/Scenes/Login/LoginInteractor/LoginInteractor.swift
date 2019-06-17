@@ -13,8 +13,18 @@ class LoginInteractor: LoginInteractorInputProtocol {
     var presenter: LoginPresenter?
     var dataManager: LoginDataManager?
     
+    func loginUser(email:String?, password:String?){
+        self.dataManager?.loginUser(email: email, password: password)
+    }
+    
 }
 
 extension LoginInteractor: LoginDataManagerOutputProtocol{
+    func showUser(user: User){
+        self.presenter?.showUser(user: user)
+    }
     
+    func showError(error:ErrorEntity){
+        self.presenter?.showError(error: error)
+    }
 }

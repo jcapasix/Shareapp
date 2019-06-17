@@ -7,11 +7,24 @@
 //
 
 import Foundation
+import SVProgressHUD
+import FirebaseAuth
 
 class LoginDataManager: LoginDataManagerInputProtocol {
     
-}
-
-extension LoginDataManager: LoginDataManagerOutputProtocol{
+    var interactor:LoginInteractor?
+    
+    func loginUser(email:String?, password:String?){
+        SVProgressHUD.show()
+        Auth.auth().signIn(withEmail: email!, password: password!) { (user, error) in
+            SVProgressHUD.dismiss()
+            if error == nil {
+                self.interactor?.showUser(user: User())
+            }
+            else{
+                self.interactor?.showError(error: Errors.REGISTER_ERROR)
+            }
+        }
+    }
     
 }

@@ -18,6 +18,9 @@ protocol LoginViewProtocol {
 
 protocol LoginPresenterProtocol {
     //Presenter -> View
+    func showUser(user: User)
+    func logoutConfirm(rpt: Bool)
+    func showError(error:ErrorEntity)
 }
 
 protocol LoginInteractorInputProtocol {
@@ -28,6 +31,8 @@ protocol LoginInteractorInputProtocol {
 
 protocol LoginInteractorOutputProtocol {
     //Interactor -> Presenter
+    func showUser(user: User)
+    func showError(error:ErrorEntity)
 }
 
 protocol LoginDataManagerInputProtocol {
@@ -36,14 +41,21 @@ protocol LoginDataManagerInputProtocol {
 
 protocol LoginDataManagerOutputProtocol {
     //DataManager -> Interactor
+    func showUser(user: User)
+    func showError(error:ErrorEntity)
 }
 
 protocol LoginWireframeProtocol {
     //Presenter -> Wireframe
+    var controller: LoginViewController? {get set}
 }
 
 protocol LoginRouterProtocol {
     
     var controller: LoginViewController? {get set}
+    
     //View -> Router
+    func routeToHome()
+    func routeToRegister()
+    func routeToLogin()
 }

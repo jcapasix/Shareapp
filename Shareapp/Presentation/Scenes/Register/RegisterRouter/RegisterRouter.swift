@@ -17,7 +17,7 @@ class RegisterRouter: RegisterRouterProtocol {
         controller?.present(registerController, animated: true, completion: nil)
     }
     
-    func closeController(){
+    func routeToClose(){
         controller?.dismiss(animated: true, completion: nil)
     }
     

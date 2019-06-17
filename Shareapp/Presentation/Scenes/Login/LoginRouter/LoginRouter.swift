@@ -22,4 +22,8 @@ class LoginRouter: LoginRouterProtocol {
         controller?.present(registerController, animated: true, completion: nil)
     }
     
+    func routeToLogin(){
+        self.controller?.navigationController?.popViewController(animated: true)
+    }
+    
 }

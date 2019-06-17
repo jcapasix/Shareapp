@@ -8,10 +8,11 @@
 
 import Foundation
 
-class RegisterWireFrame{
+class RegisterWireFrame: RegisterWireframeProtocol{
     var controller: RegisterViewController?
-}
-
-extension RegisterWireFrame: RegisterWireframeProtocol{
+    
+    func initView(){
+        self.controller?.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
     
 }

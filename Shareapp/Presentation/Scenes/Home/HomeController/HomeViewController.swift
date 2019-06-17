@@ -19,3 +19,13 @@ class HomeViewController: UIViewController {
         _ = HomeConfigurator.sharedInstance.configure(self)
     }
 }
+
+extension HomeViewController: HomePresenterProtocol{
+    
+    func logoutConfirm(rpt: Bool){
+        
+    }
+    func showError(error:ErrorEntity){
+        Utils.showAlert(error: error, view: self)
+    }
+}

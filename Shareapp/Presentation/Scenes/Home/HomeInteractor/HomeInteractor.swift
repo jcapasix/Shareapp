@@ -12,8 +12,14 @@ class HomeInteractor: HomeInteractorInputProtocol {
     
     var presenter: HomePresenter?
     var dataManager: HomeDataManager?
+    
+    func logoutUser(){
+        self.dataManager?.logoutUser()
+    }
 }
 
 extension HomeInteractor: HomeDataManagerOutputProtocol{
-    
+    func logoutConfirm(rpt: Bool){
+        self.presenter?.logoutConfirm(rpt: rpt)
+    }
 }

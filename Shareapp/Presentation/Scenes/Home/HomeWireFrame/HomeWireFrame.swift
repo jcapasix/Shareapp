@@ -8,10 +8,7 @@
 
 import Foundation
 
-class HomeWireFrame{
+class HomeWireFrame: HomeWireframeProtocol{
     var controller: HomeViewController?
-}
-
-extension HomeWireFrame: HomeWireframeProtocol{
     
 }

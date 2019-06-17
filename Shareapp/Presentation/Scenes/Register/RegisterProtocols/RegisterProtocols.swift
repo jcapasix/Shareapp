@@ -18,6 +18,7 @@ protocol RegisterViewProtocol {
 
 protocol RegisterPresenterProtocol {
     //Presenter -> View
+    func showError(error:ErrorEntity)
 }
 
 protocol RegisterInteractorInputProtocol {
@@ -28,14 +29,21 @@ protocol RegisterInteractorInputProtocol {
 
 protocol RegisterInteractorOutputProtocol {
     //Interactor -> Presenter
+    func showUser(user: User)
+    func showError(error:ErrorEntity)
 }
 
 protocol RegisterDataManagerInputProtocol {
+    var interactor: RegisterInteractor? {get set}
+    
     //Interactor -> DataManager
+    func registerUser(email:String?, password:String?)
 }
 
 protocol RegisterDataManagerOutputProtocol {
     //DataManager -> Interactor
+    func showUser(user: User)
+    func showError(error:ErrorEntity)
 }
 
 protocol RegisterWireframeProtocol {
@@ -46,4 +54,6 @@ protocol RegisterRouterProtocol {
     
     var controller: RegisterViewController? {get set}
     //View -> Router
+    func routeToRegister()
+    func routeToClose()
 }

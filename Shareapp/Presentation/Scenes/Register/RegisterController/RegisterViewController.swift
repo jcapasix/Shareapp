@@ -13,6 +13,10 @@ class RegisterViewController: UIViewController {
     var presenter: RegisterPresenter?
     var router: RegisterRouter?
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordConfirmTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,9 +24,19 @@ class RegisterViewController: UIViewController {
     }
     
     // MARK: Actions
-    
-    @IBAction func closeButtonPressed(_ sender: Any) {
-        self.router?.closeController()
+    @IBAction func registerButtonPressed(_ sender: Any) {
+        self.presenter?.registerUser(email: self.emailTextField.text, password: self.passwordTextField.text, passwordConfirm: self.passwordConfirmTextField.text)
     }
     
+    
+    @IBAction func closeButtonPressed(_ sender: Any) {
+        self.router?.routeToClose()
+    }
+    
+}
+
+extension RegisterViewController: RegisterPresenterProtocol{
+    func showError(error:ErrorEntity){
+        Utils.showAlert(error: error, view: self)
+    }
 }

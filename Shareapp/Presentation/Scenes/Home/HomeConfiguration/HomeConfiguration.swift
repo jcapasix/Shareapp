@@ -33,7 +33,10 @@ class HomeConfigurator{
         controller.presenter = presenter
         controller.router = router
         
+        dataManager.interactor = interactor
         wireFrame.controller = controller
+        
+        presenter.viewDidLoad()
         
     }
 }

@@ -8,10 +8,11 @@
 
 import Foundation
 
-class LoginWireFrame{
+class LoginWireFrame: LoginWireframeProtocol{
     var controller: LoginViewController?
-}
-
-extension LoginWireFrame: LoginWireframeProtocol{
+    
+    func initView(){
+        self.controller?.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
     
 }

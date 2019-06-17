@@ -13,6 +13,9 @@ class LoginViewController: UIViewController {
     var presenter: LoginPresenter?
     var router: LoginRouter?
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +26,7 @@ class LoginViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction func loginButtonPressed(_ sender: Any) {
-        self.router?.routeToHome()
+        self.presenter?.loginUser(email: self.emailTextField.text, password: self.passwordTextField.text)
     }
     
     @IBAction func registerButtonPressed(_ sender: Any) {
@@ -34,4 +37,15 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginPresenterProtocol{
     
+    func showUser(user: User){
+        self.router?.routeToHome()
+    }
+    
+    func logoutConfirm(rpt: Bool){
+        self.router?.routeToLogin()
+    }
+    
+    func showError(error:ErrorEntity){
+        Utils.showAlert(error: error, view: self)
+    }
 }

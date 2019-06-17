@@ -17,8 +17,15 @@ class HomePresenter: HomeViewProtocol {
     func viewDidLoad() {
         
     }
+    
+    func logoutUser(){
+        self.interactor?.logoutUser()
+    }
 }
 
 extension HomePresenter: HomeInteractorOutputProtocol{
     
+    func logoutConfirm(rpt: Bool){
+        self.controller?.logoutConfirm(rpt: rpt)
+    }
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SVProgressHUD
 
 class RegisterPresenter: RegisterViewProtocol {
     
@@ -17,8 +18,31 @@ class RegisterPresenter: RegisterViewProtocol {
     func viewDidLoad() {
         
     }
+    
+    func registerUser(email:String?, password:String?, passwordConfirm:String?){
+        
+        if password == passwordConfirm{
+            if Utils.isValidEmail(email: email ?? NO_TEXT){
+                self.interactor?.registerUser(email: email, password: password)
+            }
+            else{
+                self.controller?.showError(error: Errors.REGISTER_EMAIL_FAIL)
+            }
+        }
+        else{
+            self.controller?.showError(error: Errors.REGISTER_PASSWORD_CONFIRM)
+        }
+    }
 }
 
 extension RegisterPresenter: RegisterInteractorOutputProtocol{
+    
+    func showUser(user: User){
+        
+    }
+    
+    func showError(error:ErrorEntity){
+        self.controller?.showError(error: error)
+    }
     
 }

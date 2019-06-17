@@ -18,24 +18,31 @@ protocol HomeViewProtocol {
 
 protocol HomePresenterProtocol {
     //Presenter -> View
+    func logoutConfirm(rpt: Bool)
+    func showError(error:ErrorEntity)
 }
 
 protocol HomeInteractorInputProtocol {
     var presenter: HomePresenter? {get set}
     var dataManager: HomeDataManager? {get set}
+    
     //Presenter -> Interactor
+    func logoutUser()
 }
 
 protocol HomeInteractorOutputProtocol {
     //Interactor -> Presenter
+    func logoutConfirm(rpt: Bool)
 }
 
 protocol HomeDataManagerInputProtocol {
     //Interactor -> DataManager
+    func logoutUser()
 }
 
 protocol HomeDataManagerOutputProtocol {
     //DataManager -> Interactor
+    func logoutConfirm(rpt: Bool)
 }
 
 protocol HomeWireframeProtocol {
@@ -45,5 +52,8 @@ protocol HomeWireframeProtocol {
 protocol HomeRouterProtocol {
     
     var controller: HomeViewController? {get set}
+    
     //View -> Router
+    func routeToHome()
+    func closeController()
 }
