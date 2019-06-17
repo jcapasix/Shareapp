@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class RegisterDataManager: RegisterDataManagerInputProtocol {
+    
+}
+
+extension RegisterDataManager: RegisterDataManagerOutputProtocol{
+    
+}

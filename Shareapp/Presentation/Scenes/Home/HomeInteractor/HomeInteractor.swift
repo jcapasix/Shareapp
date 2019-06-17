@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class HomeInteractor: HomeInteractorInputProtocol {
+    
+    var presenter: HomePresenter?
+    var dataManager: HomeDataManager?
+}
+
+extension HomeInteractor: HomeDataManagerOutputProtocol{
+    
+}

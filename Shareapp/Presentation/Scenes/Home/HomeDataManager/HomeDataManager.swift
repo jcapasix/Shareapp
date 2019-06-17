@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class HomeDataManager: HomeDataManagerInputProtocol {
+    
+}
+
+extension HomeDataManager: HomeDataManagerOutputProtocol{
+    
+}

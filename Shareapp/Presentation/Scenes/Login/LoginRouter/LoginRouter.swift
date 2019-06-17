@@ -12,6 +12,11 @@ class LoginRouter: LoginRouterProtocol {
     
     var controller: LoginViewController?
     
+    func routeToHome(){
+        let homeController = HomeViewController()
+        controller?.navigationController?.pushViewController(homeController, animated: true)
+    }
+    
     func routeToRegister(){
         let registerController = RegisterViewController()
         controller?.present(registerController, animated: true, completion: nil)

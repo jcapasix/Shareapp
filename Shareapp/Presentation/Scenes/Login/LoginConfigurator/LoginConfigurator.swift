@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class LoginConfigurator{
     
     // MARK: Object lifecycle

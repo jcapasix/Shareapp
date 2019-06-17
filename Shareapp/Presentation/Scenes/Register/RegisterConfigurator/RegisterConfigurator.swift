@@ -7,3 +7,33 @@
 //
 
 import Foundation
+
+class RegisterConfigurator{
+    
+    // MARK: Object lifecycle
+    public static let sharedInstance = RegisterConfigurator()
+    
+    // MARK: Configuration
+    func configure(_ controller: RegisterViewController){
+        
+        let presenter = RegisterPresenter()
+        let interactor = RegisterInteractor()
+        let router = RegisterRouter()
+        let wireFrame = RegisterWireFrame()
+        let dataManager = RegisterDataManager()
+        
+        presenter.controller = controller
+        presenter.interactor = interactor
+        presenter.wireFrame = wireFrame
+        
+        interactor.presenter = presenter
+        interactor.dataManager = dataManager
+        
+        router.controller = controller
+        controller.presenter = presenter
+        controller.router = router
+        
+        wireFrame.controller = controller
+        
+    }
+}

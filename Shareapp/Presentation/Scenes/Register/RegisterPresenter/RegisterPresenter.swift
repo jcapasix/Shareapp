@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class RegisterPresenter: RegisterViewProtocol {
+    
+    var controller: RegisterViewController?
+    var wireFrame:  RegisterWireFrame?
+    var interactor: RegisterInteractor?
+    
+    func viewDidLoad() {
+        
+    }
+}
+
+extension RegisterPresenter: RegisterInteractorOutputProtocol{
+    
+}

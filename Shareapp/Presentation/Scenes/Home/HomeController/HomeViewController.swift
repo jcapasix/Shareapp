@@ -10,7 +10,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    var presenter: HomePresenter?
+    var router: HomeRouter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        _ = HomeConfigurator.sharedInstance.configure(self)
     }
 }

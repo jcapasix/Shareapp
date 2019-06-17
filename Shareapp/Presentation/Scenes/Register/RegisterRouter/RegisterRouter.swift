@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class RegisterRouter: RegisterRouterProtocol {
+    
+    var controller: RegisterViewController?
+    
+    func routeToRegister(){
+        let registerController = RegisterViewController()
+        controller?.present(registerController, animated: true, completion: nil)
+    }
+    
+    func closeController(){
+        controller?.dismiss(animated: true, completion: nil)
+    }
+    
+}

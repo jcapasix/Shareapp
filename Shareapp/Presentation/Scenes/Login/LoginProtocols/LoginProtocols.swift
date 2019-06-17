@@ -6,9 +6,6 @@
 //  Copyright © 2019 Jordan Capa. All rights reserved.
 //
 
-import Foundation
-import UIKit
-
 protocol LoginViewProtocol {
     
     var controller: LoginViewController? {get set}

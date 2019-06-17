@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class HomeRouter: HomeRouterProtocol {
+    
+    var controller: HomeViewController?
+    
+    func routeToHome(){
+        let HomeController = HomeViewController()
+        controller?.present(HomeController, animated: true, completion: nil)
+    }
+    
+    func closeController(){
+        controller?.dismiss(animated: true, completion: nil)
+    }
+    
+}

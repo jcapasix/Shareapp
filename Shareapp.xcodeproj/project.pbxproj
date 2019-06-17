@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		04398E98127FA1C730C23770 /* Pods_Shareapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF15BAD7BF2C5C3B3DBF68B /* Pods_Shareapp.framework */; };
 		5026FFA922B75BFC00612247 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFA822B75BFC00612247 /* LoginWireFrame.swift */; };
+		5026FFAC22B76B9400612247 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFAB22B76B9400612247 /* RegisterProtocols.swift */; };
+		5026FFAF22B76BD300612247 /* RegisterWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFAE22B76BD300612247 /* RegisterWireFrame.swift */; };
+		5026FFB222B770E500612247 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFB122B770E500612247 /* HomeProtocols.swift */; };
+		5026FFB522B7712000612247 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFB422B7712000612247 /* HomeWireFrame.swift */; };
 		50D4799F22B690A300AAB327 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4799D22B690A300AAB327 /* LoginViewController.swift */; };
 		50D479A022B690A300AAB327 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D4799E22B690A300AAB327 /* LoginViewController.xib */; };
 		50D479A222B690C400AAB327 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479A122B690C400AAB327 /* LoginPresenter.swift */; };
@@ -68,6 +72,10 @@
 		3E2C39EA7D7EE7CF0B50B29F /* Pods-ShareappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareappTests.debug.xcconfig"; path = "Target Support Files/Pods-ShareappTests/Pods-ShareappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4943E37ABA995765AB6336EC /* Pods-ShareappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareappUITests.release.xcconfig"; path = "Target Support Files/Pods-ShareappUITests/Pods-ShareappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5026FFA822B75BFC00612247 /* LoginWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
+		5026FFAB22B76B9400612247 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
+		5026FFAE22B76BD300612247 /* RegisterWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWireFrame.swift; sourceTree = "<group>"; };
+		5026FFB122B770E500612247 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		5026FFB422B7712000612247 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
 		50D4799D22B690A300AAB327 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		50D4799E22B690A300AAB327 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		50D479A122B690C400AAB327 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -158,6 +166,38 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5026FFAA22B76B6E00612247 /* RegisterProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				5026FFAB22B76B9400612247 /* RegisterProtocols.swift */,
+			);
+			path = RegisterProtocols;
+			sourceTree = "<group>";
+		};
+		5026FFAD22B76BB100612247 /* RegisterWireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				5026FFAE22B76BD300612247 /* RegisterWireFrame.swift */,
+			);
+			path = RegisterWireFrame;
+			sourceTree = "<group>";
+		};
+		5026FFB022B770D000612247 /* HomeProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				5026FFB122B770E500612247 /* HomeProtocols.swift */,
+			);
+			path = HomeProtocols;
+			sourceTree = "<group>";
+		};
+		5026FFB322B7711300612247 /* HomeWireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				5026FFB422B7712000612247 /* HomeWireFrame.swift */,
+			);
+			path = HomeWireFrame;
+			sourceTree = "<group>";
+		};
 		50D4798F22B68E9400AAB327 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,7 +254,9 @@
 				50D479C622B6956200AAB327 /* HomeController */,
 				50D479C522B6955900AAB327 /* HomePresenter */,
 				50D479C422B6955000AAB327 /* HomeInteractor */,
+				5026FFB022B770D000612247 /* HomeProtocols */,
 				50D479C322B6954600AAB327 /* HomeRouter */,
+				5026FFB322B7711300612247 /* HomeWireFrame */,
 				50D479C222B6953B00AAB327 /* HomeDataManager */,
 			);
 			path = Home;
@@ -227,7 +269,9 @@
 				50D479AD22B6946000AAB327 /* RegisterController */,
 				50D479B022B6949100AAB327 /* RegisterPresenter */,
 				50D479AE22B6946F00AAB327 /* RegisterInteractor */,
+				5026FFAA22B76B6E00612247 /* RegisterProtocols */,
 				50D479AC22B6945700AAB327 /* RegisterRouter */,
+				5026FFAD22B76BB100612247 /* RegisterWireFrame */,
 				50D479B122B694C900AAB327 /* RegisterDataManager */,
 			);
 			path = Register;
@@ -718,6 +762,7 @@
 				50D479A622B690D400AAB327 /* LoginProtocols.swift in Sources */,
 				50D479D122B6959E00AAB327 /* HomeInteractor.swift in Sources */,
 				50EB090F22B3FACD00B3C476 /* Shareapp.xcdatamodeld in Sources */,
+				5026FFAF22B76BD300612247 /* RegisterWireFrame.swift in Sources */,
 				50D479E222B6984200AAB327 /* User.swift in Sources */,
 				50D479B322B694E100AAB327 /* RegisterConfigurator.swift in Sources */,
 				50D479CC22B6958F00AAB327 /* HomeViewController.swift in Sources */,
@@ -725,8 +770,11 @@
 				50D479DE22B6962600AAB327 /* Connectivity.swift in Sources */,
 				50D479A422B690CC00AAB327 /* LoginInteractor.swift in Sources */,
 				50D479B922B6950900AAB327 /* RegisterPresenter.swift in Sources */,
+				5026FFAC22B76B9400612247 /* RegisterProtocols.swift in Sources */,
+				5026FFB522B7712000612247 /* HomeWireFrame.swift in Sources */,
 				50EB090722B3FACD00B3C476 /* AppDelegate.swift in Sources */,
 				5026FFA922B75BFC00612247 /* LoginWireFrame.swift in Sources */,
+				5026FFB222B770E500612247 /* HomeProtocols.swift in Sources */,
 				50D479D522B695B100AAB327 /* HomeDataManager.swift in Sources */,
 				50D479AB22B6910200AAB327 /* LoginConfigurator.swift in Sources */,
 				50D479BB22B6951100AAB327 /* RegisterInteractor.swift in Sources */,

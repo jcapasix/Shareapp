@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class RegisterInteractor: RegisterInteractorInputProtocol {
+    
+    var presenter: RegisterPresenter?
+    var dataManager: RegisterDataManager?
+}
+
+extension RegisterInteractor: RegisterDataManagerOutputProtocol{
+    
+}

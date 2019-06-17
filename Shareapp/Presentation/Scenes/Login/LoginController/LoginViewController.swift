@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction func loginButtonPressed(_ sender: Any) {
-        
+        self.router?.routeToHome()
     }
     
     @IBAction func registerButtonPressed(_ sender: Any) {

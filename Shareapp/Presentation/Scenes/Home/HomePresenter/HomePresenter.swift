@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class HomePresenter: HomeViewProtocol {
+    
+    var controller: HomeViewController?
+    var wireFrame:  HomeWireFrame?
+    var interactor: HomeInteractor?
+    
+    func viewDidLoad() {
+        
+    }
+}
+
+extension HomePresenter: HomeInteractorOutputProtocol{
+    
+}
