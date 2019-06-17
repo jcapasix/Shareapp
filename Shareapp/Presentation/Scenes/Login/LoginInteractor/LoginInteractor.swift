@@ -21,6 +21,7 @@ class LoginInteractor: LoginInteractorInputProtocol {
 
 extension LoginInteractor: LoginDataManagerOutputProtocol{
     func showUser(user: User){
+        AuthManager.sharedInstance.login(value: true)
         self.presenter?.showUser(user: user)
     }
     

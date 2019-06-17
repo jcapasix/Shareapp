@@ -36,5 +36,7 @@ class RegisterConfigurator{
         dataManager.interactor = interactor
         wireFrame.controller = controller
         
+        presenter.viewDidLoad()
+        
     }
 }

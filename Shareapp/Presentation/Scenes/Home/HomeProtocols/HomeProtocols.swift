@@ -47,6 +47,7 @@ protocol HomeDataManagerOutputProtocol {
 
 protocol HomeWireframeProtocol {
     //Presenter -> Wireframe
+    func initView()
 }
 
 protocol HomeRouterProtocol {
@@ -54,6 +55,5 @@ protocol HomeRouterProtocol {
     var controller: HomeViewController? {get set}
     
     //View -> Router
-    func routeToHome()
-    func closeController()
+    func routeToLogin()
 }

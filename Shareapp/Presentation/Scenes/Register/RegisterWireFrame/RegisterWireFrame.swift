@@ -7,12 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
 class RegisterWireFrame: RegisterWireframeProtocol{
     var controller: RegisterViewController?
     
+    var tap: UITapGestureRecognizer!
+    
     func initView(){
         self.controller?.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.tap = UITapGestureRecognizer(target: self.controller, action: #selector(self.controller?.dismissKeyboard))
+        self.controller?.view.addGestureRecognizer(tap)
     }
     
 }

@@ -20,6 +20,9 @@ class HomeInteractor: HomeInteractorInputProtocol {
 
 extension HomeInteractor: HomeDataManagerOutputProtocol{
     func logoutConfirm(rpt: Bool){
+        if rpt{
+            AuthManager.sharedInstance.login(value: false)
+        }
         self.presenter?.logoutConfirm(rpt: rpt)
     }
 }

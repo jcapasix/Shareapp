@@ -7,18 +7,28 @@
 //
 
 import Foundation
+import UIKit
 
 class HomeRouter: HomeRouterProtocol {
     
     var controller: HomeViewController?
     
-    func routeToHome(){
-        let HomeController = HomeViewController()
-        controller?.present(HomeController, animated: true, completion: nil)
-    }
+//    func routeToHome(){
+//        let HomeController = HomeViewController()
+//        controller?.present(HomeController, animated: true, completion: nil)
+//    }
     
-    func closeController(){
-        controller?.dismiss(animated: true, completion: nil)
+    func routeToLogin(){
+        
+        //self.controller?.navigationController?.popViewController(animated: true)
+        
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            
+            let newWindow = UIWindow()
+            appDelegate.replaceWindow(newWindow)
+            newWindow.rootViewController = UINavigationController(rootViewController: LoginViewController())
+        }
+        
     }
     
 }

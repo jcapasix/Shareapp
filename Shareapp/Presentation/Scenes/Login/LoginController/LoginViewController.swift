@@ -33,16 +33,18 @@ class LoginViewController: UIViewController {
         self.router?.routeToRegister()
     }
     
+    //MARK: - Own Methods
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
+    }
+    
 }
 
 extension LoginViewController: LoginPresenterProtocol{
     
     func showUser(user: User){
         self.router?.routeToHome()
-    }
-    
-    func logoutConfirm(rpt: Bool){
-        self.router?.routeToLogin()
     }
     
     func showError(error:ErrorEntity){

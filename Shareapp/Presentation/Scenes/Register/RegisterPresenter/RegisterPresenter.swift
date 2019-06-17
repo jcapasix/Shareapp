@@ -16,7 +16,7 @@ class RegisterPresenter: RegisterViewProtocol {
     var interactor: RegisterInteractor?
     
     func viewDidLoad() {
-        
+        self.wireFrame?.initView()
     }
     
     func registerUser(email:String?, password:String?, passwordConfirm:String?){

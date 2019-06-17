@@ -19,7 +19,6 @@ protocol LoginViewProtocol {
 protocol LoginPresenterProtocol {
     //Presenter -> View
     func showUser(user: User)
-    func logoutConfirm(rpt: Bool)
     func showError(error:ErrorEntity)
 }
 
@@ -57,5 +56,4 @@ protocol LoginRouterProtocol {
     //View -> Router
     func routeToHome()
     func routeToRegister()
-    func routeToLogin()
 }

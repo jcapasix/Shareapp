@@ -16,6 +16,8 @@ class HomeConfigurator{
     // MARK: Configuration
     func configure(_ controller: HomeViewController){
         
+        controller.initView()
+        
         let presenter = HomePresenter()
         let interactor = HomeInteractor()
         let router = HomeRouter()

@@ -33,6 +33,12 @@ class RegisterViewController: UIViewController {
         self.router?.routeToClose()
     }
     
+    //MARK: - Own Methods
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
+    }
+    
 }
 
 extension RegisterViewController: RegisterPresenterProtocol{

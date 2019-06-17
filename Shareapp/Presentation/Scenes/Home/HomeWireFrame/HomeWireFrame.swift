@@ -7,8 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
 class HomeWireFrame: HomeWireframeProtocol{
     var controller: HomeViewController?
     
+    func initView(){
+        self.controller?.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.controller?.title = "Lugares"
+    }
 }

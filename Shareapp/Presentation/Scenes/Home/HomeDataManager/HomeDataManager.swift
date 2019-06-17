@@ -15,7 +15,9 @@ class HomeDataManager: HomeDataManagerInputProtocol {
     var interactor:HomeInteractor?
     
     func logoutUser(){
+        SVProgressHUD.show()
         if Auth.auth().currentUser != nil{
+            SVProgressHUD.dismiss()
             do{
                 try Auth.auth().signOut();
                 self.interactor?.logoutConfirm(rpt: true)

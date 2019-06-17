@@ -21,7 +21,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-        let navigation = UINavigationController(rootViewController: LoginViewController())
+        let loginViewController = LoginViewController()
+        let homeViewController = HomeViewController()
+        
+        let navigation:UINavigationController?
+        
+        if !AuthManager.sharedInstance.isLogin(){
+            navigation = UINavigationController(rootViewController: loginViewController)
+        }
+        else{
+            navigation = UINavigationController(rootViewController: homeViewController)
+        }
+        
         
         self.window = UIWindow()
         let screen:UIScreen = UIScreen.main
@@ -39,6 +50,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
         
         return true
+    }
+    
+    func replaceWindow(_ newWindow: UIWindow) {
+        if let oldWindow = window {
+            newWindow.frame = oldWindow.frame
+            newWindow.windowLevel = oldWindow.windowLevel
+            newWindow.screen = oldWindow.screen
+            newWindow.isHidden = false
+            window = newWindow
+            oldWindow.removeFromSuperview()
+        }
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

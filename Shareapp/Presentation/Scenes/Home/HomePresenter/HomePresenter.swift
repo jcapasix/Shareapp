@@ -15,7 +15,7 @@ class HomePresenter: HomeViewProtocol {
     var interactor: HomeInteractor?
     
     func viewDidLoad() {
-        
+        self.wireFrame?.initView()
     }
     
     func logoutUser(){
