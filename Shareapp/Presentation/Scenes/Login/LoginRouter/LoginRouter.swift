@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class LoginRouter: LoginRouterProtocol {
+    
+    var controller: LoginViewController?
+    
+    func routeToRegister(){
+        let registerController = RegisterViewController()
+        controller?.present(registerController, animated: true, completion: nil)
+    }
+    
+}

@@ -10,21 +10,28 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    var presenter: LoginPresenter?
+    var router: LoginRouter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        _ = LoginConfigurator.sharedInstance.configure(self)
     }
 
+    
+    // MARK: - Actions
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        
     }
-    */
+    
+    @IBAction func registerButtonPressed(_ sender: Any) {
+        self.router?.routeToRegister()
+    }
+    
+}
 
+extension LoginViewController: LoginPresenterProtocol{
+    
 }

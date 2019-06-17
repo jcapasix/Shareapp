@@ -12,6 +12,12 @@ target 'Shareapp' do
   pod 'Firebase/Database'
   
   pod 'SVProgressHUD'
+  
+  pod 'KeychainAccess'
+  pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireObjectMapper', '~> 5.0'
+  pod 'AlamofireImage'
+  pod 'ObjectMapper', '~> 3.3'
 
   target 'ShareappTests' do
     inherit! :search_paths

@@ -3,14 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04398E98127FA1C730C23770 /* Pods_Shareapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF15BAD7BF2C5C3B3DBF68B /* Pods_Shareapp.framework */; };
+		5026FFA922B75BFC00612247 /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFA822B75BFC00612247 /* LoginWireFrame.swift */; };
+		50D4799F22B690A300AAB327 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4799D22B690A300AAB327 /* LoginViewController.swift */; };
+		50D479A022B690A300AAB327 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D4799E22B690A300AAB327 /* LoginViewController.xib */; };
+		50D479A222B690C400AAB327 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479A122B690C400AAB327 /* LoginPresenter.swift */; };
+		50D479A422B690CC00AAB327 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479A322B690CC00AAB327 /* LoginInteractor.swift */; };
+		50D479A622B690D400AAB327 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479A522B690D400AAB327 /* LoginProtocols.swift */; };
+		50D479A822B690E100AAB327 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479A722B690E100AAB327 /* LoginRouter.swift */; };
+		50D479AB22B6910200AAB327 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479AA22B6910200AAB327 /* LoginConfigurator.swift */; };
+		50D479B322B694E100AAB327 /* RegisterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479B222B694E100AAB327 /* RegisterConfigurator.swift */; };
+		50D479B622B694FC00AAB327 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479B422B694FC00AAB327 /* RegisterViewController.swift */; };
+		50D479B722B694FC00AAB327 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D479B522B694FC00AAB327 /* RegisterViewController.xib */; };
+		50D479B922B6950900AAB327 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479B822B6950900AAB327 /* RegisterPresenter.swift */; };
+		50D479BB22B6951100AAB327 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479BA22B6951100AAB327 /* RegisterInteractor.swift */; };
+		50D479BD22B6951A00AAB327 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479BC22B6951A00AAB327 /* RegisterRouter.swift */; };
+		50D479BF22B6952700AAB327 /* RegisterDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479BE22B6952700AAB327 /* RegisterDataManager.swift */; };
+		50D479C122B6952F00AAB327 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479C022B6952F00AAB327 /* LoginDataManager.swift */; };
+		50D479C922B6958600AAB327 /* HomeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479C822B6958600AAB327 /* HomeConfiguration.swift */; };
+		50D479CC22B6958F00AAB327 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479CA22B6958F00AAB327 /* HomeViewController.swift */; };
+		50D479CD22B6958F00AAB327 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D479CB22B6958F00AAB327 /* HomeViewController.xib */; };
+		50D479CF22B6959700AAB327 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479CE22B6959700AAB327 /* HomePresenter.swift */; };
+		50D479D122B6959E00AAB327 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479D022B6959E00AAB327 /* HomeInteractor.swift */; };
+		50D479D322B695A600AAB327 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479D222B695A600AAB327 /* HomeRouter.swift */; };
+		50D479D522B695B100AAB327 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479D422B695B100AAB327 /* HomeDataManager.swift */; };
+		50D479D822B695F700AAB327 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479D722B695F700AAB327 /* Configuration.swift */; };
+		50D479DA22B6960500AAB327 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479D922B6960500AAB327 /* Connection.swift */; };
+		50D479DC22B6961500AAB327 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479DB22B6961500AAB327 /* Routes.swift */; };
+		50D479DE22B6962600AAB327 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479DD22B6962600AAB327 /* Connectivity.swift */; };
+		50D479E222B6984200AAB327 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479E122B6984200AAB327 /* User.swift */; };
+		50D479E422B69C9A00AAB327 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50D479E322B69C9A00AAB327 /* GoogleService-Info.plist */; };
 		50EB090722B3FACD00B3C476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EB090622B3FACD00B3C476 /* AppDelegate.swift */; };
-		50EB090922B3FACD00B3C476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EB090822B3FACD00B3C476 /* ViewController.swift */; };
-		50EB090C22B3FACD00B3C476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EB090A22B3FACD00B3C476 /* Main.storyboard */; };
 		50EB090F22B3FACD00B3C476 /* Shareapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50EB090D22B3FACD00B3C476 /* Shareapp.xcdatamodeld */; };
 		50EB091122B3FACE00B3C476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50EB091022B3FACE00B3C476 /* Assets.xcassets */; };
 		50EB091422B3FACE00B3C476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EB091222B3FACE00B3C476 /* LaunchScreen.storyboard */; };
@@ -40,10 +67,37 @@
 /* Begin PBXFileReference section */
 		3E2C39EA7D7EE7CF0B50B29F /* Pods-ShareappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareappTests.debug.xcconfig"; path = "Target Support Files/Pods-ShareappTests/Pods-ShareappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4943E37ABA995765AB6336EC /* Pods-ShareappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareappUITests.release.xcconfig"; path = "Target Support Files/Pods-ShareappUITests/Pods-ShareappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5026FFA822B75BFC00612247 /* LoginWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
+		50D4799D22B690A300AAB327 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		50D4799E22B690A300AAB327 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		50D479A122B690C400AAB327 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		50D479A322B690CC00AAB327 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		50D479A522B690D400AAB327 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		50D479A722B690E100AAB327 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		50D479AA22B6910200AAB327 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		50D479B222B694E100AAB327 /* RegisterConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterConfigurator.swift; sourceTree = "<group>"; };
+		50D479B422B694FC00AAB327 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		50D479B522B694FC00AAB327 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		50D479B822B6950900AAB327 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		50D479BA22B6951100AAB327 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		50D479BC22B6951A00AAB327 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		50D479BE22B6952700AAB327 /* RegisterDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDataManager.swift; sourceTree = "<group>"; };
+		50D479C022B6952F00AAB327 /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
+		50D479C822B6958600AAB327 /* HomeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfiguration.swift; sourceTree = "<group>"; };
+		50D479CA22B6958F00AAB327 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		50D479CB22B6958F00AAB327 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		50D479CE22B6959700AAB327 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		50D479D022B6959E00AAB327 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		50D479D222B695A600AAB327 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		50D479D422B695B100AAB327 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		50D479D722B695F700AAB327 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		50D479D922B6960500AAB327 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		50D479DB22B6961500AAB327 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		50D479DD22B6962600AAB327 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		50D479E122B6984200AAB327 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = Shareapp/Data/Network/User.swift; sourceTree = SOURCE_ROOT; };
+		50D479E322B69C9A00AAB327 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		50EB090322B3FACD00B3C476 /* Shareapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shareapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50EB090622B3FACD00B3C476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50EB090822B3FACD00B3C476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		50EB090B22B3FACD00B3C476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50EB090E22B3FACD00B3C476 /* Shareapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shareapp.xcdatamodel; sourceTree = "<group>"; };
 		50EB091022B3FACE00B3C476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50EB091322B3FACE00B3C476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,8 +155,272 @@
 				A7F5C6CB3E34C9CCD258C063 /* Pods-ShareappUITests.debug.xcconfig */,
 				4943E37ABA995765AB6336EC /* Pods-ShareappUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		50D4798F22B68E9400AAB327 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				50D4799222B68ECA00AAB327 /* Resourses */,
+				50D4799322B68ED400AAB327 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		50D4799122B68EA600AAB327 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				50D479D622B695E900AAB327 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		50D4799222B68ECA00AAB327 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		50D4799322B68ED400AAB327 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				50D4799422B68F8000AAB327 /* Login */,
+				50D4799622B68F8B00AAB327 /* Register */,
+				50D4799522B68F8600AAB327 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		50D4799422B68F8000AAB327 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				50D479A922B690EB00AAB327 /* LoginConfigurator */,
+				50D4799722B68FD400AAB327 /* LoginController */,
+				50D4799822B68FE000AAB327 /* LoginPresenter */,
+				50D4799922B68FF400AAB327 /* LoginInteractor */,
+				50D4799A22B6900300AAB327 /* LoginProtocols */,
+				50D4799B22B6901400AAB327 /* LoginRouter */,
+				50D479E522B75B3800AAB327 /* LoginWireFrame */,
+				50D4799C22B6902C00AAB327 /* LoginDataManager */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		50D4799522B68F8600AAB327 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				50D479C722B6956A00AAB327 /* HomeConfiguration */,
+				50D479C622B6956200AAB327 /* HomeController */,
+				50D479C522B6955900AAB327 /* HomePresenter */,
+				50D479C422B6955000AAB327 /* HomeInteractor */,
+				50D479C322B6954600AAB327 /* HomeRouter */,
+				50D479C222B6953B00AAB327 /* HomeDataManager */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		50D4799622B68F8B00AAB327 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				50D479AF22B6948200AAB327 /* RegisterConfigurator */,
+				50D479AD22B6946000AAB327 /* RegisterController */,
+				50D479B022B6949100AAB327 /* RegisterPresenter */,
+				50D479AE22B6946F00AAB327 /* RegisterInteractor */,
+				50D479AC22B6945700AAB327 /* RegisterRouter */,
+				50D479B122B694C900AAB327 /* RegisterDataManager */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		50D4799722B68FD400AAB327 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				50D4799D22B690A300AAB327 /* LoginViewController.swift */,
+				50D4799E22B690A300AAB327 /* LoginViewController.xib */,
+			);
+			path = LoginController;
+			sourceTree = "<group>";
+		};
+		50D4799822B68FE000AAB327 /* LoginPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				50D479A122B690C400AAB327 /* LoginPresenter.swift */,
+			);
+			path = LoginPresenter;
+			sourceTree = "<group>";
+		};
+		50D4799922B68FF400AAB327 /* LoginInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				50D479A322B690CC00AAB327 /* LoginInteractor.swift */,
+			);
+			path = LoginInteractor;
+			sourceTree = "<group>";
+		};
+		50D4799A22B6900300AAB327 /* LoginProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				50D479A522B690D400AAB327 /* LoginProtocols.swift */,
+			);
+			path = LoginProtocols;
+			sourceTree = "<group>";
+		};
+		50D4799B22B6901400AAB327 /* LoginRouter */ = {
+			isa = PBXGroup;
+			children = (
+				50D479A722B690E100AAB327 /* LoginRouter.swift */,
+			);
+			path = LoginRouter;
+			sourceTree = "<group>";
+		};
+		50D4799C22B6902C00AAB327 /* LoginDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				50D479C022B6952F00AAB327 /* LoginDataManager.swift */,
+			);
+			path = LoginDataManager;
+			sourceTree = "<group>";
+		};
+		50D479A922B690EB00AAB327 /* LoginConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				50D479AA22B6910200AAB327 /* LoginConfigurator.swift */,
+			);
+			path = LoginConfigurator;
+			sourceTree = "<group>";
+		};
+		50D479AC22B6945700AAB327 /* RegisterRouter */ = {
+			isa = PBXGroup;
+			children = (
+				50D479BC22B6951A00AAB327 /* RegisterRouter.swift */,
+			);
+			path = RegisterRouter;
+			sourceTree = "<group>";
+		};
+		50D479AD22B6946000AAB327 /* RegisterController */ = {
+			isa = PBXGroup;
+			children = (
+				50D479B422B694FC00AAB327 /* RegisterViewController.swift */,
+				50D479B522B694FC00AAB327 /* RegisterViewController.xib */,
+			);
+			path = RegisterController;
+			sourceTree = "<group>";
+		};
+		50D479AE22B6946F00AAB327 /* RegisterInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				50D479BA22B6951100AAB327 /* RegisterInteractor.swift */,
+			);
+			path = RegisterInteractor;
+			sourceTree = "<group>";
+		};
+		50D479AF22B6948200AAB327 /* RegisterConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				50D479B222B694E100AAB327 /* RegisterConfigurator.swift */,
+			);
+			path = RegisterConfigurator;
+			sourceTree = "<group>";
+		};
+		50D479B022B6949100AAB327 /* RegisterPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				50D479B822B6950900AAB327 /* RegisterPresenter.swift */,
+			);
+			path = RegisterPresenter;
+			sourceTree = "<group>";
+		};
+		50D479B122B694C900AAB327 /* RegisterDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				50D479BE22B6952700AAB327 /* RegisterDataManager.swift */,
+			);
+			path = RegisterDataManager;
+			sourceTree = "<group>";
+		};
+		50D479C222B6953B00AAB327 /* HomeDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				50D479D422B695B100AAB327 /* HomeDataManager.swift */,
+			);
+			path = HomeDataManager;
+			sourceTree = "<group>";
+		};
+		50D479C322B6954600AAB327 /* HomeRouter */ = {
+			isa = PBXGroup;
+			children = (
+				50D479D222B695A600AAB327 /* HomeRouter.swift */,
+			);
+			path = HomeRouter;
+			sourceTree = "<group>";
+		};
+		50D479C422B6955000AAB327 /* HomeInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				50D479D022B6959E00AAB327 /* HomeInteractor.swift */,
+			);
+			path = HomeInteractor;
+			sourceTree = "<group>";
+		};
+		50D479C522B6955900AAB327 /* HomePresenter */ = {
+			isa = PBXGroup;
+			children = (
+				50D479CE22B6959700AAB327 /* HomePresenter.swift */,
+			);
+			path = HomePresenter;
+			sourceTree = "<group>";
+		};
+		50D479C622B6956200AAB327 /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				50D479CA22B6958F00AAB327 /* HomeViewController.swift */,
+				50D479CB22B6958F00AAB327 /* HomeViewController.xib */,
+			);
+			path = HomeController;
+			sourceTree = "<group>";
+		};
+		50D479C722B6956A00AAB327 /* HomeConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				50D479C822B6958600AAB327 /* HomeConfiguration.swift */,
+			);
+			path = HomeConfiguration;
+			sourceTree = "<group>";
+		};
+		50D479D622B695E900AAB327 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				50D479D722B695F700AAB327 /* Configuration.swift */,
+				50D479D922B6960500AAB327 /* Connection.swift */,
+				50D479DB22B6961500AAB327 /* Routes.swift */,
+				50D479DD22B6962600AAB327 /* Connectivity.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		50D479DF22B6983300AAB327 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				50D479E022B6983A00AAB327 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		50D479E022B6983A00AAB327 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50D479E122B6984200AAB327 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50D479E522B75B3800AAB327 /* LoginWireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				5026FFA822B75BFC00612247 /* LoginWireFrame.swift */,
+			);
+			path = LoginWireFrame;
 			sourceTree = "<group>";
 		};
 		50EB08FA22B3FACD00B3C476 = {
@@ -130,12 +448,14 @@
 		50EB090522B3FACD00B3C476 /* Shareapp */ = {
 			isa = PBXGroup;
 			children = (
+				50D4798F22B68E9400AAB327 /* Presentation */,
+				50D479DF22B6983300AAB327 /* Domain */,
+				50D4799122B68EA600AAB327 /* Data */,
 				50EB090622B3FACD00B3C476 /* AppDelegate.swift */,
-				50EB090822B3FACD00B3C476 /* ViewController.swift */,
-				50EB090A22B3FACD00B3C476 /* Main.storyboard */,
 				50EB091022B3FACE00B3C476 /* Assets.xcassets */,
 				50EB091222B3FACE00B3C476 /* LaunchScreen.storyboard */,
 				50EB091522B3FACE00B3C476 /* Info.plist */,
+				50D479E322B69C9A00AAB327 /* GoogleService-Info.plist */,
 				50EB090D22B3FACD00B3C476 /* Shareapp.xcdatamodeld */,
 			);
 			path = Shareapp;
@@ -277,9 +597,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D479A022B690A300AAB327 /* LoginViewController.xib in Resources */,
 				50EB091422B3FACE00B3C476 /* LaunchScreen.storyboard in Resources */,
+				50D479CD22B6958F00AAB327 /* HomeViewController.xib in Resources */,
 				50EB091122B3FACE00B3C476 /* Assets.xcassets in Resources */,
-				50EB090C22B3FACD00B3C476 /* Main.storyboard in Resources */,
+				50D479B722B694FC00AAB327 /* RegisterViewController.xib in Resources */,
+				50D479E422B69C9A00AAB327 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,9 +713,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D4799F22B690A300AAB327 /* LoginViewController.swift in Sources */,
+				50D479B622B694FC00AAB327 /* RegisterViewController.swift in Sources */,
+				50D479A622B690D400AAB327 /* LoginProtocols.swift in Sources */,
+				50D479D122B6959E00AAB327 /* HomeInteractor.swift in Sources */,
 				50EB090F22B3FACD00B3C476 /* Shareapp.xcdatamodeld in Sources */,
-				50EB090922B3FACD00B3C476 /* ViewController.swift in Sources */,
+				50D479E222B6984200AAB327 /* User.swift in Sources */,
+				50D479B322B694E100AAB327 /* RegisterConfigurator.swift in Sources */,
+				50D479CC22B6958F00AAB327 /* HomeViewController.swift in Sources */,
+				50D479BD22B6951A00AAB327 /* RegisterRouter.swift in Sources */,
+				50D479DE22B6962600AAB327 /* Connectivity.swift in Sources */,
+				50D479A422B690CC00AAB327 /* LoginInteractor.swift in Sources */,
+				50D479B922B6950900AAB327 /* RegisterPresenter.swift in Sources */,
 				50EB090722B3FACD00B3C476 /* AppDelegate.swift in Sources */,
+				5026FFA922B75BFC00612247 /* LoginWireFrame.swift in Sources */,
+				50D479D522B695B100AAB327 /* HomeDataManager.swift in Sources */,
+				50D479AB22B6910200AAB327 /* LoginConfigurator.swift in Sources */,
+				50D479BB22B6951100AAB327 /* RegisterInteractor.swift in Sources */,
+				50D479BF22B6952700AAB327 /* RegisterDataManager.swift in Sources */,
+				50D479CF22B6959700AAB327 /* HomePresenter.swift in Sources */,
+				50D479DC22B6961500AAB327 /* Routes.swift in Sources */,
+				50D479D322B695A600AAB327 /* HomeRouter.swift in Sources */,
+				50D479A822B690E100AAB327 /* LoginRouter.swift in Sources */,
+				50D479DA22B6960500AAB327 /* Connection.swift in Sources */,
+				50D479A222B690C400AAB327 /* LoginPresenter.swift in Sources */,
+				50D479D822B695F700AAB327 /* Configuration.swift in Sources */,
+				50D479C922B6958600AAB327 /* HomeConfiguration.swift in Sources */,
+				50D479C122B6952F00AAB327 /* LoginDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,14 +775,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		50EB090A22B3FACD00B3C476 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50EB090B22B3FACD00B3C476 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		50EB091222B3FACE00B3C476 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -575,10 +914,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jcapasix.Shareapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcapasix.shareapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -594,10 +933,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jcapasix.Shareapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcapasix.shareapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

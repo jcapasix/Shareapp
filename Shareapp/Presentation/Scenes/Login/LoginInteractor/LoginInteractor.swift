@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class LoginInteractor: LoginInteractorInputProtocol {
+    
+    var presenter: LoginPresenter?
+    var dataManager: LoginDataManager?
+    
+}
+
+extension LoginInteractor: LoginDataManagerOutputProtocol{
+    
+}

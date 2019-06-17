@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+class LoginPresenter: LoginViewProtocol {
+    
+    var controller: LoginViewController?
+    var wireFrame:  LoginWireFrame?
+    var interactor: LoginInteractor?
+    
+    func viewDidLoad() {
+        
+    }
+    
+    
+}
+
+extension LoginPresenter: LoginInteractorOutputProtocol{
+    
+}

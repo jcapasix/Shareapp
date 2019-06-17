@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class LoginDataManager: LoginDataManagerInputProtocol {
+    
+}
+
+extension LoginDataManager: LoginDataManagerOutputProtocol{
+    
+}
