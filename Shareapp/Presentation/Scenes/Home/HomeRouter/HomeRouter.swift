@@ -32,8 +32,7 @@ class HomeRouter: HomeRouterProtocol {
     }
     
     func routeToNewPlace(){
-        let newPlaceViewController = NewPlaceViewController()
-        self.controller?.present(newPlaceViewController, animated: true, completion: nil)
+        self.controller?.present(UINavigationController(rootViewController: NewPlaceViewController()), animated: true, completion: nil)
     }
     
 }

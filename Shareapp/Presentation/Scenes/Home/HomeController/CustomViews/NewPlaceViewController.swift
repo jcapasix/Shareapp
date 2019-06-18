@@ -27,7 +27,8 @@ class NewPlaceViewController: UIViewController {
         writePlaceToDatabase(place)
         
         // Return to Unicorns Table VC
-        navigationController?.popViewController(animated: true)
+        //navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func didTapImageView(_ sender: UITapGestureRecognizer) {
@@ -84,6 +85,8 @@ class NewPlaceViewController: UIViewController {
         submitButton.backgroundColor = .gray
         
         picker.delegate = self
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(self.closeButtonPressed))
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -93,6 +96,10 @@ class NewPlaceViewController: UIViewController {
             showNetworkActivityIndicator = false
             storageUploadTask?.cancel()
         }
+    }
+    
+    @objc func closeButtonPressed(){
+        self.dismiss(animated: true, completion: nil)
     }
     
 
@@ -106,7 +113,7 @@ extension NewPlaceViewController: UIImagePickerControllerDelegate, UINavigationC
         
         // 1. Get image data from selected image
         guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage,
-            let imageData = UIImage.jpegData(image) else {
+            let imageData = image.jpegData(compressionQuality: 0.75) else {
                 print("Could not get Image JPEG Representation")
                 return
         }

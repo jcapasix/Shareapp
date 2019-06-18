@@ -13,6 +13,7 @@
 		5026FFAF22B76BD300612247 /* RegisterWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFAE22B76BD300612247 /* RegisterWireFrame.swift */; };
 		5026FFB222B770E500612247 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFB122B770E500612247 /* HomeProtocols.swift */; };
 		5026FFB522B7712000612247 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFB422B7712000612247 /* HomeWireFrame.swift */; };
+		5026FFB722B89C1800612247 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5026FFB622B89C1700612247 /* GoogleService-Info.plist */; };
 		50A43C2622B7FB95006E1C5B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A43C2522B7FB95006E1C5B /* Utils.swift */; };
 		50A43C2822B7FE1D006E1C5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A43C2722B7FE1D006E1C5B /* Constants.swift */; };
 		50A43C2A22B7FEFA006E1C5B /* ErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A43C2922B7FEFA006E1C5B /* ErrorEntity.swift */; };
@@ -49,7 +50,6 @@
 		50D479DC22B6961500AAB327 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479DB22B6961500AAB327 /* Routes.swift */; };
 		50D479DE22B6962600AAB327 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479DD22B6962600AAB327 /* Connectivity.swift */; };
 		50D479E222B6984200AAB327 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479E122B6984200AAB327 /* User.swift */; };
-		50D479E422B69C9A00AAB327 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50D479E322B69C9A00AAB327 /* GoogleService-Info.plist */; };
 		50EB090722B3FACD00B3C476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EB090622B3FACD00B3C476 /* AppDelegate.swift */; };
 		50EB090F22B3FACD00B3C476 /* Shareapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50EB090D22B3FACD00B3C476 /* Shareapp.xcdatamodeld */; };
 		50EB091122B3FACE00B3C476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50EB091022B3FACE00B3C476 /* Assets.xcassets */; };
@@ -85,6 +85,7 @@
 		5026FFAE22B76BD300612247 /* RegisterWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWireFrame.swift; sourceTree = "<group>"; };
 		5026FFB122B770E500612247 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		5026FFB422B7712000612247 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
+		5026FFB622B89C1700612247 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		50A43C2522B7FB95006E1C5B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		50A43C2722B7FE1D006E1C5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		50A43C2922B7FEFA006E1C5B /* ErrorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErrorEntity.swift; path = Shareapp/Presentation/Resourses/ErrorEntity.swift; sourceTree = SOURCE_ROOT; };
@@ -121,7 +122,6 @@
 		50D479DB22B6961500AAB327 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		50D479DD22B6962600AAB327 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		50D479E122B6984200AAB327 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = Shareapp/Data/Network/User.swift; sourceTree = SOURCE_ROOT; };
-		50D479E322B69C9A00AAB327 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		50EB090322B3FACD00B3C476 /* Shareapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shareapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50EB090622B3FACD00B3C476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50EB090E22B3FACD00B3C476 /* Shareapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shareapp.xcdatamodel; sourceTree = "<group>"; };
@@ -542,7 +542,7 @@
 				50EB091022B3FACE00B3C476 /* Assets.xcassets */,
 				50EB091222B3FACE00B3C476 /* LaunchScreen.storyboard */,
 				50EB091522B3FACE00B3C476 /* Info.plist */,
-				50D479E322B69C9A00AAB327 /* GoogleService-Info.plist */,
+				5026FFB622B89C1700612247 /* GoogleService-Info.plist */,
 				50EB090D22B3FACD00B3C476 /* Shareapp.xcdatamodeld */,
 			);
 			path = Shareapp;
@@ -691,7 +691,7 @@
 				50D479CD22B6958F00AAB327 /* HomeViewController.xib in Resources */,
 				50EB091122B3FACE00B3C476 /* Assets.xcassets in Resources */,
 				50D479B722B694FC00AAB327 /* RegisterViewController.xib in Resources */,
-				50D479E422B69C9A00AAB327 /* GoogleService-Info.plist in Resources */,
+				5026FFB722B89C1800612247 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

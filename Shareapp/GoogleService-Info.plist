@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>639324694479-v9mdagjdahbm2c20a80paqp6eeffhjd5.apps.googleusercontent.com</string>
+	<string>639324694479-odj73bggead94cbvknoeqbs8feiqbtq7.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.639324694479-v9mdagjdahbm2c20a80paqp6eeffhjd5</string>
+	<string>com.googleusercontent.apps.639324694479-odj73bggead94cbvknoeqbs8feiqbtq7</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAlGDMkGrfwb3qsThHBqalrALoD8U2BaKk</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.jcapasix.shareapp</string>
+	<string>pe.com.jcapasix.shareapp</string>
 	<key>PROJECT_ID</key>
 	<string>shareappfirapp</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:639324694479:ios:2dc0b1710a8cfacb</string>
+	<string>1:639324694479:ios:0439a1a98d662435</string>
 	<key>DATABASE_URL</key>
 	<string>https://shareappfirapp.firebaseio.com</string>
 </dict>
