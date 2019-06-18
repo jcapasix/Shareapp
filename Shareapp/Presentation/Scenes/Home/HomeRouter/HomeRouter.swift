@@ -31,4 +31,9 @@ class HomeRouter: HomeRouterProtocol {
         
     }
     
+    func routeToNewPlace(){
+        let newPlaceViewController = NewPlaceViewController()
+        self.controller?.present(newPlaceViewController, animated: true, completion: nil)
+    }
+    
 }

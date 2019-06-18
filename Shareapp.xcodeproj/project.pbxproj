@@ -18,6 +18,10 @@
 		50A43C2A22B7FEFA006E1C5B /* ErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A43C2922B7FEFA006E1C5B /* ErrorEntity.swift */; };
 		50A43C2D22B82773006E1C5B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A43C2C22B82773006E1C5B /* AuthManager.swift */; };
 		50A43C3322B854F1006E1C5B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A43C3222B854F1006E1C5B /* Place.swift */; };
+		50A43C3722B85904006E1C5B /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A43C3522B85904006E1C5B /* PlaceTableViewCell.swift */; };
+		50A43C3822B85904006E1C5B /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A43C3622B85904006E1C5B /* PlaceTableViewCell.xib */; };
+		50A43C3B22B85AB2006E1C5B /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A43C3922B85AB2006E1C5B /* NewPlaceViewController.swift */; };
+		50A43C3C22B85AB2006E1C5B /* NewPlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A43C3A22B85AB2006E1C5B /* NewPlaceViewController.xib */; };
 		50D4799F22B690A300AAB327 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D4799D22B690A300AAB327 /* LoginViewController.swift */; };
 		50D479A022B690A300AAB327 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D4799E22B690A300AAB327 /* LoginViewController.xib */; };
 		50D479A222B690C400AAB327 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D479A122B690C400AAB327 /* LoginPresenter.swift */; };
@@ -86,6 +90,10 @@
 		50A43C2922B7FEFA006E1C5B /* ErrorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErrorEntity.swift; path = Shareapp/Presentation/Resourses/ErrorEntity.swift; sourceTree = SOURCE_ROOT; };
 		50A43C2C22B82773006E1C5B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		50A43C3222B854F1006E1C5B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Place.swift; path = Shareapp/Presentation/Resourses/Managers/Place.swift; sourceTree = SOURCE_ROOT; };
+		50A43C3522B85904006E1C5B /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		50A43C3622B85904006E1C5B /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		50A43C3922B85AB2006E1C5B /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
+		50A43C3A22B85AB2006E1C5B /* NewPlaceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPlaceViewController.xib; sourceTree = "<group>"; };
 		50D4799D22B690A300AAB327 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		50D4799E22B690A300AAB327 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		50D479A122B690C400AAB327 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -224,6 +232,17 @@
 				50A43C2C22B82773006E1C5B /* AuthManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		50A43C3422B858DF006E1C5B /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				50A43C3522B85904006E1C5B /* PlaceTableViewCell.swift */,
+				50A43C3622B85904006E1C5B /* PlaceTableViewCell.xib */,
+				50A43C3922B85AB2006E1C5B /* NewPlaceViewController.swift */,
+				50A43C3A22B85AB2006E1C5B /* NewPlaceViewController.xib */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		50D4798F22B68E9400AAB327 /* Presentation */ = {
@@ -439,6 +458,7 @@
 		50D479C622B6956200AAB327 /* HomeController */ = {
 			isa = PBXGroup;
 			children = (
+				50A43C3422B858DF006E1C5B /* CustomViews */,
 				50D479CA22B6958F00AAB327 /* HomeViewController.swift */,
 				50D479CB22B6958F00AAB327 /* HomeViewController.xib */,
 			);
@@ -664,6 +684,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50A43C3822B85904006E1C5B /* PlaceTableViewCell.xib in Resources */,
+				50A43C3C22B85AB2006E1C5B /* NewPlaceViewController.xib in Resources */,
 				50D479A022B690A300AAB327 /* LoginViewController.xib in Resources */,
 				50EB091422B3FACE00B3C476 /* LaunchScreen.storyboard in Resources */,
 				50D479CD22B6958F00AAB327 /* HomeViewController.xib in Resources */,
@@ -786,6 +808,7 @@
 				50D479D122B6959E00AAB327 /* HomeInteractor.swift in Sources */,
 				50EB090F22B3FACD00B3C476 /* Shareapp.xcdatamodeld in Sources */,
 				5026FFAF22B76BD300612247 /* RegisterWireFrame.swift in Sources */,
+				50A43C3722B85904006E1C5B /* PlaceTableViewCell.swift in Sources */,
 				50D479E222B6984200AAB327 /* User.swift in Sources */,
 				50A43C2A22B7FEFA006E1C5B /* ErrorEntity.swift in Sources */,
 				50D479B322B694E100AAB327 /* RegisterConfigurator.swift in Sources */,
@@ -806,6 +829,7 @@
 				50D479BF22B6952700AAB327 /* RegisterDataManager.swift in Sources */,
 				50D479CF22B6959700AAB327 /* HomePresenter.swift in Sources */,
 				50A43C2822B7FE1D006E1C5B /* Constants.swift in Sources */,
+				50A43C3B22B85AB2006E1C5B /* NewPlaceViewController.swift in Sources */,
 				50A43C2622B7FB95006E1C5B /* Utils.swift in Sources */,
 				50D479DC22B6961500AAB327 /* Routes.swift in Sources */,
 				50D479D322B695A600AAB327 /* HomeRouter.swift in Sources */,
