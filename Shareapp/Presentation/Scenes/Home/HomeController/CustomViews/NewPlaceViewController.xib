@@ -46,6 +46,9 @@
                     <state key="normal" title="Submit">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="didTapSubmit:" destination="-1" eventType="touchUpInside" id="61T-rj-ZUQ"/>
+                    </connections>
                 </button>
                 <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unicorn" translatesAutoresizingMaskIntoConstraints="NO" id="6iq-tr-dOV">
                     <rect key="frame" x="40" y="187" width="295" height="300"/>
