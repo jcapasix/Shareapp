@@ -35,4 +35,11 @@ class Utils{
     static func isKeyPresentInUserDefaults(key: String) -> Bool {
         return UserDefaults.standard.object(forKey: key) != nil
     }
+    
+    static func getDateSrting() -> String{
+        let date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return format.string(from: date)
+    }
 }

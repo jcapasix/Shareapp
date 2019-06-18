@@ -48,8 +48,9 @@ class NewPlaceViewController: UIViewController {
     
     @IBAction func didTapSubmit(_ sender: UIButton) {
         
+        
         let description = self.descriptionTextField.text ?? ""
-        let place = Place(imagePath: storageImagePath, description: description)
+        let place = Place(imagePath: storageImagePath, description: description, createdAt: Utils.getDateSrting())
         writePlaceToDatabase(place)
         self.dismiss(animated: true, completion: nil)
     }

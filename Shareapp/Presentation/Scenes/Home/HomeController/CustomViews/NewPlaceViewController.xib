@@ -50,7 +50,7 @@
                         <action selector="didTapSubmit:" destination="-1" eventType="touchUpInside" id="61T-rj-ZUQ"/>
                     </connections>
                 </button>
-                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unicorn" translatesAutoresizingMaskIntoConstraints="NO" id="6iq-tr-dOV">
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place_ico" translatesAutoresizingMaskIntoConstraints="NO" id="6iq-tr-dOV">
                     <rect key="frame" x="40" y="187" width="295" height="300"/>
                     <gestureRecognizers/>
                     <constraints>
@@ -83,6 +83,6 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="unicorn" width="1425" height="1425"/>
+        <image name="place_ico" width="225" height="225"/>
     </resources>
 </document>

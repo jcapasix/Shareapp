@@ -12,18 +12,19 @@ import FirebaseStorage
 
 class PlaceTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var unicornImageView: UIImageView!
+    @IBOutlet weak var placeImageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
-    
+    @IBOutlet weak var dateLabel: UILabel!
+
     var storageRef: StorageReference!
     var storageDownloadTask: StorageDownloadTask!
     
     var place: Place? {
         didSet {
             if let place = place {
-                // TODO: Implement image update
-                // unicornImageView.image =
+                downloadImage(from: place.imagePath)
                 descriptionLabel.text = place.description
+                dateLabel.text = place.createdAt
             }
         }
     }
@@ -40,7 +41,7 @@ class PlaceTableViewCell: UITableViewCell {
                 print("Error downloading:\(error)")
                 return
             } else if let imagePath = url?.path {
-                self.unicornImageView.image = UIImage(contentsOfFile: imagePath)
+                self.placeImageView.image = UIImage(contentsOfFile: imagePath)
             }
         })
     }
@@ -53,8 +54,9 @@ class PlaceTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         storageDownloadTask.cancel()
-        unicornImageView.image = #imageLiteral(resourceName: "unicorn")
+        placeImageView.image = #imageLiteral(resourceName: "place_ico")
         descriptionLabel.text = "description"
+        dateLabel.text = "createdAt"
     }
     
 }

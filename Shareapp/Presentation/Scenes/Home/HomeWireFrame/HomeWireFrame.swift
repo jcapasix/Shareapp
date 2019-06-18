@@ -15,5 +15,8 @@ class HomeWireFrame: HomeWireframeProtocol{
     func initView(){
         self.controller?.navigationController?.setNavigationBarHidden(false, animated: false)
         self.controller?.title = "Lugares"
+        
+        self.controller?.tableView.register(UINib(nibName: "PlaceTableViewCell", bundle: nil), forCellReuseIdentifier: "placeTableViewCell")
+ 
     }
 }

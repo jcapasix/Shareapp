@@ -12,11 +12,13 @@ import FirebaseDatabase
 struct Place {
     let imagePath: String
     let description: String
+    let createdAt: String
     
     // Standard init
-    init(imagePath: String, description: String) {
+    init(imagePath: String, description: String, createdAt:String) {
         self.imagePath = imagePath
         self.description = description
+        self.createdAt = createdAt
     }
     
     // Init for reading from Database snapshot
@@ -24,6 +26,7 @@ struct Place {
         let snapshotValue = snapshot.value as! [String: AnyObject]
         imagePath = snapshotValue["imagePath"] as! String
         description = snapshotValue["description"] as! String
+        createdAt = snapshotValue["createdAt"] as! String
     }
     
     // Func converting model for easier writing to database
@@ -31,6 +34,7 @@ struct Place {
         return [
             "imagePath": imagePath,
             "description": description,
+            "createdAt": createdAt
         ]
     }
 }

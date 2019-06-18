@@ -13,7 +13,7 @@
 		5026FFAF22B76BD300612247 /* RegisterWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFAE22B76BD300612247 /* RegisterWireFrame.swift */; };
 		5026FFB222B770E500612247 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFB122B770E500612247 /* HomeProtocols.swift */; };
 		5026FFB522B7712000612247 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026FFB422B7712000612247 /* HomeWireFrame.swift */; };
-		5026FFB722B89C1800612247 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5026FFB622B89C1700612247 /* GoogleService-Info.plist */; };
+		5026FFB922B8C6BF00612247 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5026FFB822B8C6BF00612247 /* GoogleService-Info.plist */; };
 		50A43C2622B7FB95006E1C5B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A43C2522B7FB95006E1C5B /* Utils.swift */; };
 		50A43C2822B7FE1D006E1C5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A43C2722B7FE1D006E1C5B /* Constants.swift */; };
 		50A43C2A22B7FEFA006E1C5B /* ErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A43C2922B7FEFA006E1C5B /* ErrorEntity.swift */; };
@@ -85,7 +85,7 @@
 		5026FFAE22B76BD300612247 /* RegisterWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWireFrame.swift; sourceTree = "<group>"; };
 		5026FFB122B770E500612247 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		5026FFB422B7712000612247 /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
-		5026FFB622B89C1700612247 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5026FFB822B8C6BF00612247 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		50A43C2522B7FB95006E1C5B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		50A43C2722B7FE1D006E1C5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		50A43C2922B7FEFA006E1C5B /* ErrorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErrorEntity.swift; path = Shareapp/Presentation/Resourses/ErrorEntity.swift; sourceTree = SOURCE_ROOT; };
@@ -542,7 +542,7 @@
 				50EB091022B3FACE00B3C476 /* Assets.xcassets */,
 				50EB091222B3FACE00B3C476 /* LaunchScreen.storyboard */,
 				50EB091522B3FACE00B3C476 /* Info.plist */,
-				5026FFB622B89C1700612247 /* GoogleService-Info.plist */,
+				5026FFB822B8C6BF00612247 /* GoogleService-Info.plist */,
 				50EB090D22B3FACD00B3C476 /* Shareapp.xcdatamodeld */,
 			);
 			path = Shareapp;
@@ -685,13 +685,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				50A43C3822B85904006E1C5B /* PlaceTableViewCell.xib in Resources */,
+				5026FFB922B8C6BF00612247 /* GoogleService-Info.plist in Resources */,
 				50A43C3C22B85AB2006E1C5B /* NewPlaceViewController.xib in Resources */,
 				50D479A022B690A300AAB327 /* LoginViewController.xib in Resources */,
 				50EB091422B3FACE00B3C476 /* LaunchScreen.storyboard in Resources */,
 				50D479CD22B6958F00AAB327 /* HomeViewController.xib in Resources */,
 				50EB091122B3FACE00B3C476 /* Assets.xcassets in Resources */,
 				50D479B722B694FC00AAB327 /* RegisterViewController.xib in Resources */,
-				5026FFB722B89C1800612247 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,15 +1007,17 @@
 			baseConfigurationReference = 8EFB65A768BFA09441910A5A /* Pods-Shareapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 778N4TU227;
 				INFOPLIST_FILE = Shareapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pe.com.jcapasix.shareapp;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.jcapasix.github.shareapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ppShareappDev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1026,15 +1028,17 @@
 			baseConfigurationReference = DED5F1176672AC1FAF96C14C /* Pods-Shareapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 778N4TU227;
 				INFOPLIST_FILE = Shareapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pe.com.jcapasix.shareapp;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.jcapasix.github.shareapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ppShareappDev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
